@@ -369,6 +369,7 @@ export default function App() {
     <View style={styles.root}>
       <StatusBar barStyle="dark-content" backgroundColor={CREAM} />
       <View style={styles.header}>
+        <Image source={require('./assets/logo.png')} style={styles.logo} />
         <Text style={styles.brand}>
           Florree <Text style={{ color: ROSE }}>Herbals</Text>
         </Text>
@@ -400,6 +401,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     borderBottomWidth: 1,
     borderColor: '#eee',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+  },
+  logo: {
+    width: 32,
+    height: 32,
+    resizeMode: 'contain',
   },
   brand: { color: GREEN, fontSize: 22, fontWeight: '700' },
   center: { padding: 24, alignItems: 'center' },
@@ -416,21 +425,34 @@ const styles = StyleSheet.create({
   title: { fontSize: 22, fontWeight: '700', color: GREEN, marginBottom: 6 },
   sync: { fontSize: 12, color: '#4b5d50', marginBottom: 14 },
   line: {
-    flexDirection: 'row', alignItems: 'center', backgroundColor: '#fff',
-    borderRadius: 12, padding: 12, marginBottom: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    borderRadius: 12,
+    padding: 12,
+    marginBottom: 10,
   },
   remove: { color: ROSE, textDecorationLine: 'underline', marginTop: 6, fontSize: 12 },
   qtyRow: { flexDirection: 'row', alignItems: 'center', gap: 10 },
   qtyBtn: {
-    width: 32, height: 32, borderRadius: 16, borderWidth: 1, borderColor: GREEN,
-    alignItems: 'center', justifyContent: 'center',
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: GREEN,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   qtyText: { color: GREEN, fontSize: 18 },
   qtyNum: { width: 20, textAlign: 'center', color: DARK },
   total: { fontSize: 18, fontWeight: '700', color: DARK, marginVertical: 14 },
   input: {
-    backgroundColor: '#fff', borderRadius: 10, padding: 12, marginBottom: 10,
-    borderWidth: 1, borderColor: '#d9d4c7',
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    padding: 12,
+    marginBottom: 10,
+    borderWidth: 1,
+    borderColor: '#d9d4c7',
   },
   tabs: { flexDirection: 'row', backgroundColor: '#fff', borderTopWidth: 1, borderColor: '#eee' },
   tab: { flex: 1, paddingVertical: 16, alignItems: 'center' },
