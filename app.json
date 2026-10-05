@@ -1,31 +1,29 @@
 {
   "expo": {
-    "name": "florree-mobile",
+    "name": "Florree Herbals",
     "slug": "florree-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo.png",
     "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FAF6EF"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.florree.mobile"
     },
     "android": {
-      "package": "com.florreeherbals.app",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#FAF6EF"
       },
-      "predictiveBackGestureEnabled": false
+      "package": "com.florree.mobile"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "91e40fe5-d791-40b4-94dd-3c3a3eeea090"
-      }
+      "favicon": "./assets/logo.png"
     }
   }
 }
